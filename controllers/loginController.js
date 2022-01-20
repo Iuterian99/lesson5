@@ -14,7 +14,6 @@ module.exports ={
     try {
       const { name, age } = req.body;
       const allUsers = JSON.parse(users.read())
-      res.render("login", { name, age })
       allUsers.push({id: allUsers.length+1, name, age})
       users.write(allUsers)
       res.redirect("/users")

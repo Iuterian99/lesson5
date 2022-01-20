@@ -14,7 +14,6 @@ in package.json we should write "dev": "nodemon server.js", "start": "node serve
 const express = require("express");
 const app = express();
 const ejs = require("ejs");
-console.log(ejs);
 const loginController = require("./controllers/loginController")
 const userController = require("./controllers/userController")
 
