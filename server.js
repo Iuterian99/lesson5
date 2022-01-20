@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs')
 
 app.get("/", loginController.GET)
-app.get("/users", loginController.POST)
+app.post("/users", loginController.POST)
 app.get("/users", userController.GET)
 
-app.listen(9000, console.log(9000))
+app.listen(1000, console.log(1000))

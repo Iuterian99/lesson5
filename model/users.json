@@ -1,12 +1,27 @@
 [
-  {
-    "id": 1,
-    "name": "Sardor",
-    "age": 19
-  },
-  {
-    "id": 2,
-    "name": "Muslim",
-    "age": 21
-  }
+    {
+        "id": 1,
+        "name": "Sardor",
+        "age": 19
+    },
+    {
+        "id": 2,
+        "name": "Muslim",
+        "age": 21
+    },
+    {
+        "id": 3,
+        "name": "sarvinoz",
+        "age": "28"
+    },
+    {
+        "id": 4,
+        "name": "asila",
+        "age": "11"
+    },
+    {
+        "id": 5,
+        "name": "Madina Rustamovna",
+        "age": "26"
+    }
 ]
