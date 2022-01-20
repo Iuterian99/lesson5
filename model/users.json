@@ -2,11 +2,11 @@
   {
     "id": 1,
     "name": "Sardor",
-    "password": "sardor123"
+    "age": 19
   },
   {
     "id": 2,
     "name": "Muslim",
-    "password": "muslim123"
+    "age": 21
   }
 ]

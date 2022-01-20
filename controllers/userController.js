@@ -5,9 +5,8 @@ module.exports ={
   GET: (req, res) =>{
     try {
       const allUsers = users.read();
-      console.log(allUsers);
       
-      res.render("index")
+      res.render("index", { users: allUsers });
     } catch (err) {
       console.log(err);
       

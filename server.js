@@ -18,6 +18,8 @@ console.log(ejs);
 const userController = require("./controllers/userController")
 const aboutController = require("./controllers/aboutController")
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs')
 
 app.get("/users", userController.GET)

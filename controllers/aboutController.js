@@ -7,5 +7,8 @@ module.exports ={
       console.log(err);
       
     }
+  },
+  POST: (req, res) => {
+
   }
 }
