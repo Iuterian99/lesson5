@@ -15,14 +15,15 @@ const express = require("express");
 const app = express();
 const ejs = require("ejs");
 console.log(ejs);
+const loginController = require("./controllers/loginController")
 const userController = require("./controllers/userController")
-const aboutController = require("./controllers/aboutController")
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs')
 
+app.get("/", loginController.GET)
+app.get("/users", loginController.POST)
 app.get("/users", userController.GET)
-app.get("/about", aboutController.GET)
 
 app.listen(9000, console.log(9000))

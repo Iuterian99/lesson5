@@ -1,15 +1,10 @@
-const FS = require('../lib/fsdeal');
-const users = new FS("../model/users.json")
-
-module.exports ={
+module.exports = {
   GET: (req, res) =>{
-    try {
-      const allUsers = users.read();
-      
-      res.render("index", { users: allUsers });
-    } catch (err) {
-      console.log(err);
-      
-    }
+   try {
+      res.render('main')
+   } catch (err) {
+     console.log(err);
+     
+   }
   }
 }
